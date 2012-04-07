@@ -24,7 +24,7 @@ To create a new project from scratch:
 5. Add Procfile, run.sh from this project - edit project name in run.sh
 
 6. Edit myapp/init.sh - add the following sections: (running erl with the -sname param causes heroku startup to fail)
-'''
+```
     'start-standalone')
            # Start Boss in production mode with no -sname parameter
            echo "starting boss in production mode..."
@@ -37,7 +37,7 @@ To create a new project from scratch:
            START_DEV=$(./rebar boss c=start_dev_cmd|grep -v "==>"|perl -pe 's/-sname\s+\S+//')
            $START_DEV
            ;;
-'''
+```
 7. Edit myapp/boss.config
    - change boss path line to:
 
