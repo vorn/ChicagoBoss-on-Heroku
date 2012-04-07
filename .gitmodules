@@ -1,0 +1,3 @@
+[submodule "ChicagoBoss"]
+	path = ChicagoBoss
+	url = https://github.com/evanmiller/ChicagoBoss.git
